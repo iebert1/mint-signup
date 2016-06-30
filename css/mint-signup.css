@@ -2,12 +2,11 @@
   width: 1425px;
   padding: 0px;
   margin: auto;
-  font-family: 'Nunito';
+  font-family: Arial;
 }
 .main{
   width: 1000px;
   height: 655px;
-  /*background-color: honeydew;*/
   margin: 0px 212.5px;
   display: flex;
   justify-content: center;
@@ -64,13 +63,14 @@
 }
 .signup-body{
   width: 700px;
-  height: 451px;
+  height: 445px;
   background-color: rgb(255, 255, 255);
-  padding: 43px 50px 50px 50px;
+  padding: 43px 50px 50px 52px;
   border-color: rgb(51, 51, 51);
   box-shadow: rgba(0, 0, 0, 0.2) 1px 3px 8px 0px;
   display: flex;
   justify-content: space-between;
+
 }
 .r-clmn{
   width:185px;
@@ -104,9 +104,10 @@
 }
 .h-sign{
   width: 398px;
-  height: 96px;
+  height: 89px;
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 #top-header{
   width: 398px;
@@ -130,14 +131,16 @@ form{
   height: 355px;
 }
 .email{
-  height: 106px;
+  height: 95px;
   display: flex;
   flex-direction: column;
+  margin: auto;
 }
 .pass{
-  height: 96px;
+  height: 86px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 21px;
 }
 .lbl{
   line-height: 21px;
@@ -146,19 +149,19 @@ form{
   padding-bottom: 6px;
   color: rgb(102, 102, 102);
 }
-#field{
+input[type="email"]:not(:focus){
   height: 28px;
   width: 314px;
-  background-color: rgb(250,255,189);
-  color: rgb(125, 127, 128);
   border-radius: 3px;
-  border-width: 1px;
-  padding: 2px;
+  border: 1px solid #d8d8d8;
+  padding: 5px;
 }
-#check-box{
-  width: 22px;
-  height: 12px;
-  padding-bottom: 5px;
+input[type="email"]:focus{
+  height: 28px;
+  width: 314px;
+  border-radius: 3px;
+  border: 1px solid #d8d8d8;
+  padding: 5px;
 }
 .rem{
   width: 398px;
@@ -167,6 +170,67 @@ form{
   font-size: 13px;
   color: rgb(102, 102, 102);
 }
+
+
+/*checkboxes in CSS - biaaaach to make*/
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked{
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 27px;
+  cursor: pointer;
+}
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: -1px;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #d8d8d8;
+  background: #f8f8f8;
+  border-radius: 3px;
+}
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after{
+  content: '✔';
+  position: absolute;
+  font-size: 18px;
+  line-height: 0.8;
+  color: #2C4D9C;
+  transition: all .2s;
+  top:2px;
+  left: 3px;
+}
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+[type="checkbox"]:not(:checked):hover + label:before{
+  content: '✔';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 18px;
+  line-height: 0.8;
+  color: lightgray;
+  width: 17px;
+  height: 17px;
+  border: 1px solid #d8d8d8;
+  background: #f8f8f8;
+  border-radius: 3px;
+  top:-1px;
+  left: 0px;
+}
+
+
+
 #log{
   display: flex;
   align-items: center;
@@ -184,9 +248,10 @@ form{
 }
 #terms-area{
   height: 18px;
-  font-size: 10px;
-  padding-top: 10px;
+  font-size: 12px;
+  padding-top: 12px;
   color: rgb(125, 127, 128);
+  padding-bottom: 6px;
 }
 #terms-area a{
   text-decoration: none;
