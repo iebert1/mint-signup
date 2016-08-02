@@ -1,0 +1,674 @@
+body{
+  margin: auto;
+  font-family: Helvetica;
+  letter-spacing: .4px;
+}
+.photo-container{
+  display: flex;
+  width: 100%;
+  height: 545px;
+  background: url(https://www.mint.com/sites/default/files/styles/mint_hero_image/public/horizon_2.jpg?itok=mc48_Udr);
+  background-position: -200px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*HEADER BAR*/
+header{
+  position: fixed;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+
+}
+#logo-swap{
+    width: 104px;
+    height: 37px;
+    background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png);
+    background-position: 0 -2480px;
+    margin-left: 13px;
+    cursor: pointer;
+}
+
+.mid-section-header{
+    display: flex;
+    justify-content: space-between;
+}
+.header-links{
+      padding: 10px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+}
+.right-section-header{
+    display: flex;
+    width: 177.609px;
+    height: 39px;
+    padding-top: 5px;
+    align-items: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+#log-in-section{
+    cursor: pointer;
+}
+#log-in-section .fa-lock{
+    width: 8.0625px;
+    height: 11px;
+    margin-right: 1px;
+    font-size: 11px;
+}
+#log-in{
+    font-size: 11px;
+    font-family: Helvetica;
+    font-weight: 600;
+    margin-right: 13px;
+    cursor: pointer;
+    letter-spacing: 0.36px;
+}
+
+.btn-header{
+    font-size: 10px;
+    font-family: Helvetica;
+    font-weight: 800;
+    cursor: pointer;
+    border: solid 1px rgb(252, 137, 16);
+    border-radius: 2px;
+    background-color: rgb(252, 137, 16);
+    line-height: 15px;
+    padding: 3px 22px;
+}
+/*END : HEADER BAR */
+
+#headline{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 168px;
+}
+#breakline{
+    font-size: 60px;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+#sub-headline{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    height: 28px;
+    margin-bottom: 48px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.sign-up-free{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  border: solid 1px rgb(252, 137, 16);
+  border-radius: 2px;
+  background-color: rgb(252, 137, 16);
+  line-height: 15px;
+  padding: 12px;
+  width: 184px;
+  }
+.sign-up-free .fa-lock{
+  font-size: 12px;
+  padding-right: 4px;
+}
+.sign-up-free:hover{
+  background-color: #c25400;
+  border: 1px solid #c25400;
+  transition-duration: .25s;
+  transition-timing-function: linear;
+  touch-action: manipulation;
+}
+.chat-btn{
+  background-color: rgba(243, 243, 243, 0.0980392);
+  padding: 12px 13px;
+  font-size: 13.5px;
+  height: 23px;
+  margin-top: 57px;
+}
+.fa-comment-o{
+  color: white;
+  padding-left: 4px;
+  font-size: 16px;
+
+}
+.chat-btn:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+/* UNDER-THE-PHOTO-SECTION */
+.under-photo-wrap{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+  height: 255px;
+}
+.under-photo-container{
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  width: 970px;
+  height: 255px;
+}
+.under-photo-cell{
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center;
+  width: 323.328px;
+}
+.under-photo-cell p{
+  width: 253.328px;
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  font-weight: 300;
+  font-size: 14px;
+  font-family: Helvetica;
+
+}
+.cell-header{
+  font-size: 21px;
+  font-weight: 800;
+}
+.paragraph{
+  height: 60px;
+  margin-bottom: 50px;
+}
+
+/* PERSONALIZED --- AREA (3) */
+.personalized{
+  display: flex;
+  flex-direction: column-reverse;
+  height: 442px;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  border-bottom: solid 1px rgb(221, 221, 221);
+}
+.perso-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: auto;
+}
+.perso-image{
+  background-image: url(https://www.mint.com/sites/default/files/ipad-with-mint-budgets.jpg?timestamp=1465929642%202x);
+  background-size: 100%;
+  width: 800px;
+  height: 358px;
+  backgound-repeat: no-repeat;
+}
+.perso-text{
+  width: 455px;
+  position: relative;
+  right: 100px;
+  padding-top: 17px;
+  margin-left: 60px;
+  box-sizing: border-box;
+}
+ul{
+  list-style-type: none;
+}
+ul li{
+  width: 419px;
+  font-size: 13.5px;
+  font-weight: 300px;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+.list-icon1:before{
+  position: absolute;
+  top: 92px;
+  left: 0px;
+  content: "";
+  width: 18px;
+  height: 20px;
+  background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png);
+  background-position: 0 -1430px;
+
+}
+.list-icon2:before{
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  content: "";
+  width: 18px;
+  height: 20px;
+  background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png);
+  background-position: 0 -4580px;
+}
+.list-icon3:before{
+  position: absolute;
+  left: 0px;
+  top: 212px;
+  content: "";
+  width: 18px;
+  height: 20px;
+  background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png);
+  background-position: 0 -1627px;
+
+}
+.blue-link{
+  color: rgb(0, 121, 243);
+  font-size: 16px;
+}
+.blue-link:hover{
+  text-decoration: underline;
+  color: darkblue;
+}
+/*GET STARTED SIMPLY AND SECURELY SECTION -- START */
+.get-started{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 369px;
+  width: auto;
+  padding-top: 60px;
+  background-color: rgb(245, 245, 245);
+  border-bottom: solid 1px rgb(221, 221, 221);
+}
+.get-started-text ul li{
+  margin-right: 50px;
+  color: black;
+}
+.get-started-photo{
+background-image: url(https://www.mint.com/sites/default/files/styles/mint_half_width/public/mint-mobile-login-screen_3.jpg?itok=smJMiHnp&timestamp=1463434179);
+width: 30%;
+box-sizing: border-box;
+background-repeat: no-repeat;
+background-size: 100%;
+}
+.list-icon4{
+  position: relative;
+}
+.list-icon4:before{
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  content: "";
+  left: -35px;
+  top: 4px;
+  background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png);
+  background-position: 0 -1651px;
+}
+.list-icon5{
+  position: relative;
+}
+.list-icon5:before{
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  content: "";
+  left: -35px;
+  top: 4px;
+  background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png);
+  background-position: 0 -2417px;
+}
+.list-icon6{
+  position: relative;
+}
+.list-icon6:before{
+  width: 18px;
+  height: 20px;
+  position: absolute;
+  content: "";
+  left: -35px;
+  top: 4px;
+  background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png);
+  background-position: 0 -4605px;
+}
+
+/* INTUITIVE FEATURES SECTION -- START */
+.intuitive-features-wrap{
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+.intuit-head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 42px;
+}
+#intuit-headtext{
+  width: 755px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21.5px;
+}
+.image-text-panel{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.intuit-cell{
+  width: 314px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.intuit-text{
+  width: 293px;
+  font-size: 13.5px;
+  display: block;
+  text-align: center;
+}
+
+
+/* LEAF-ON BLUE Section START -- */
+.blue-section{
+  width: 100%;
+  height: 480px;
+  display: block;
+  text-align: center;
+  background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/bkr-quote-row.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+}
+
+#leaf-on-blue{
+  width: 96px;
+  height: 133px;
+  background-image: url("https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png");
+  background-position: 0 -3384px;
+  position: absolute;
+  top: -60px;
+  box-sizing: border-box;
+  background-origin: padding-box;
+  margin-left: 46.5%;
+
+}
+.inside-panel-blue{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.blue-section-header{
+  width: 334px;
+  height: 88px;
+  font-size: 40px;
+  margin-top: 107px;
+  margin-bottom: 60px;
+}
+.blue-section-text{
+  width: 475px;
+  height: 35px;
+  font-size: 14.5px;
+  margin: 0px;
+  line-height: 21.5px;
+}
+#blue-section-btn{
+  color: white;
+  padding: 13.5px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.298039);
+  border-radius: 2px;
+  font-weight: 100;
+  font-size: 13.5px;
+  margin-top: 6px;
+}
+
+.white-section{
+  width: 100%;
+  height: 440.500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inside-panel-white{
+  width: 940px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 1px rgb(221, 221, 221);
+  margin-bottom: 20px;
+}
+.white-section-header{
+  margin-top: 101px;
+  margin-bottom: 0px;
+  font-size: 32px;
+  font-weight: 800;
+}
+.white-section-text{
+  width: 470px;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: .6px;
+  margin-bottom: 8px;
+}
+.white-section-btns{
+  width: 470px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 67px;
+}
+#white-section-log-in{
+  padding: 12px 73.5px;
+  color: rgb(153, 153, 153);
+  font-size: 14px;
+  font-weight: 800;
+  border: 2px solid rgb(204, 204, 204);
+  border-radius: 2px;
+  margin-left: 5px;
+}
+.white-section-bottom{
+ width: 940px;
+}
+.white-section-bottom p{
+  font-size: 10px;
+  font-weight: 600;
+}
+.mobile-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 236px;
+  background-color: black;
+}
+.mobile-links-header{
+  color: white;
+  font-size: 24px;
+  margin: 16px;
+}
+.links-panel{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.apple-link{
+  background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png);
+  background-position: 0 -52px;
+  width: 130px;
+  height: 42px;
+  margin-right: 10px;
+  border: 1px solid rgb(166, 166, 166);
+}
+.amazon-link{
+  background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png);
+  background-position: 0 0px;
+  width: 130px;
+  height: 42px;
+  margin-right: 10px;
+  border: 1px solid rgb(166, 166, 166);
+}
+.google-link{
+  background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png);
+  background-position: 0 -2103px;
+  width: 130px;
+  height: 42px;
+  margin-right: 10px;
+  border: 1px solid rgb(166, 166, 166);
+}
+
+/*FOOTER Section -- START */
+footer{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ background-color: black;
+ color: white;
+ border-top: 1px solid rgb(51, 51, 51);
+  padding-top: 67px;
+  padding-bottom: 37px;
+}
+.footer-logo{
+  background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png);
+  background-position: 0 -2445px;
+  width: 89px;
+  height: 27px;
+  margin-bottom: 31px;
+}
+.social-links{
+  height: 35px;
+  width: 940px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.f-fb{
+  background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png);
+  background-position: 0 -2052px;
+  width: 11px;
+  height: 19px;
+}
+.f-twitter{
+  background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png);
+  background-position: 0 -4721px;
+  width: 23px;
+  height: 20px;
+}
+.f-instagram{
+  background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png);
+  background-position: 0 -2186px;
+  width: 23px;
+  height: 20px;
+}
+.f-mint-waves{
+  background-image: url(https://www.mint.com/sites/all/themes/custom/mint_2014/img/icons/normal-sa1f1c7ac3f.png);
+  background-position: 0 -4528px;
+  width: 18px;
+  height: 20px;
+}
+.f-media-queries{
+  font-size: 15px;
+  font-weight: 300px;
+}
+.social-links a{
+  padding: 0 19px;
+}
+.social-links a:hover{
+  text-transform: underline;
+}
+.social-links a::before{
+  border-right: 1px solid white;
+  height: 17px;
+  width: 17px;
+  position: relative;
+  top: -3px;
+  bottom: -3px;
+}
+
+.menu-first{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  line-height: 21.486px;
+}
+.menu-first a{
+  box-sizing: border-box;
+  padding-right: 19px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: Arial;
+  font-weight: 500;
+}
+.menu-second{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 11.5px;
+  width: auto;
+  flex-wrap: wrap;
+  line-height: 15.7143px;
+}
+.menu-second a{
+  width: auto;
+  flex-direction: row;
+  margin-right: 13px;
+}
+.menu-second a:hover{
+  text-decoration: underline;
+}
+.menu-third{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 11.5px;
+  width: 402.203px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.menu-third a{
+  width: auto;
+  flex-direction: row;
+  margin-right: 13px;
+  line-height: 15.7143px;
+}
+.menu-third a:hover{
+  text-decoration: underline;
+}
+.f-text{
+  font-size: 11.5px;
+  margin: 0px;
+}
+.f-license-link{
+  color: rgb(0, 121, 243);
+}
+.f-license-link:hover{
+  text-decoration: underline;
+}
